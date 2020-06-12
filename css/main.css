@@ -8,10 +8,10 @@
   /* Center and scale the image nicely */
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: 300px 100px;
+  background-size: 300px;
 
   /* Needed to position the navbar */
-  position: relative;
+  /*position: relative;*/
 }
 
 body {
