@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: screen;
 
   /* Needed to position the navbar */
   position: relative;
