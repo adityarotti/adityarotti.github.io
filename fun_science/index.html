@@ -1,0 +1,49 @@
+---
+layout: default
+title: Fun science
+---
+
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<p style="margin-bottom:2cm;"></p>
+
+	<div class="blurb">
+		<h1>Simple fun science</h1>
+	</div><!-- /.blurb -->
+
+
+	<button type="button" class="collapsible">
+	Solving the 2-D Schrodinger equation for arbitrary well shapes
+	</button>
+	<div class="content">
+		<p>Results from ...</p>
+	  	<img src="/fun_science/img/2D_HW_eigenstates.gif" width="75%">
+		</img>
+	</div>
+	
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+  		coll[i].addEventListener("click", function() {
+    	this.classList.toggle("active");
+    	var content = this.nextElementSibling;
+    	if (content.style.display === "block") {
+      		content.style.display = "none";
+    	} else {
+      		content.style.display = "block";
+    	}
+  		});
+		}
+	</script>
+
+	<p style="margin-bottom:5cm;"></p>
+
+</body>
+</html>
