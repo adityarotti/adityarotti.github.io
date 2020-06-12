@@ -6,7 +6,7 @@
   min-height: 80px;
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: 120% 50%;
   background-repeat: no-repeat;
   background-size: 600px;
 
