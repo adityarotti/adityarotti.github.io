@@ -30,6 +30,7 @@ title: Galaxy clusters
 </style>
 </head>
 
+<body>
 <div class="blurb">
 	<h1>Sunyaev Zeldovich effect</h1>
 </div><!-- /.blurb -->
@@ -42,16 +43,35 @@ Are Planck clusters relativistically cold?
   </img>
 </div>
 
-<!--
-<body>
-<ul>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-<li>
-<h3> Are Planck clusters relativistically cold? </h3>
-<img src="/research/galaxy_clusters/img/y2Te/kTe_ell_zevol.jpeg" width="75%"></img>
-</li>
-
-</ul>
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body>
--->
+
+
+<!--<body>-->
+<!--<ul>-->
+<!---->
+<!--<li>-->
+<!--<h3> Are Planck clusters relativistically cold? </h3>-->
+<!--<img src="/research/galaxy_clusters/img/y2Te/kTe_ell_zevol.jpeg" width="75%"></img>-->
+<!--</li>-->
+<!---->
+<!--</ul>-->
+<!---->
+<!--</body>-->
+
