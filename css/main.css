@@ -77,8 +77,9 @@ ul.posts li {
 }
 
 .active, .collapsible:hover {
-  background-color: #33ACFF;
+  background-color: #08A71E;
 }
+/*#33ACFF*/
 
 .content {
   padding: 0 18px;
