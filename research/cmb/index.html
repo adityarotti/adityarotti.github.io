@@ -2,18 +2,46 @@
 layout: default
 title: Cosmic Microwave Background
 ---
-<div class="blurb">
-	<h1>CMB, foregrounds, systematics etc...</h1>
-</div><!-- /.blurb -->
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 <body>
-<ul>
+	<div class="blurb">
+		<h1>CMB, foregrounds, systematics etc...</h1>
+	</div><!-- /.blurb -->
 
-<li>
-<h3>Foreground moment to mitigate B-mode foregrounds</h3>
-<img src="/research/cmb/img/bmode_moments/LITEBIRD_bbstat_evolve_moments_lmax450_dl16.gif" width="75%"></img>
-<img src="/research/cmb/img/bmode_moments/LITEBIRD_summary_statistics_lmin002.jpeg" width="75%"></img>
-</li>
 
-</ul>
+	<button type="button" class="collapsible">
+	Foreground moment to mitigate B-mode foregrounds
+	</button>
+	<div class="content">
+		<p>Results from ...</p>
+	  	<img src="/research/cmb/img/bmode_moments/LITEBIRD_bbstat_evolve_moments_lmax450_dl16.gif" width="75%">
+	  	</img>
+	  	<img src="/research/cmb/img/bmode_moments/LITEBIRD_summary_statistics_lmin002.jpeg" width="75%">
+	  	</img>
+	</div>
+	
+
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+  		coll[i].addEventListener("click", function() {
+    	this.classList.toggle("active");
+    	var content = this.nextElementSibling;
+    	if (content.style.display === "block") {
+      		content.style.display = "none";
+    	} else {
+      		content.style.display = "block";
+    	}
+  		});
+		}
+	</script>
+	
 </body>
+</html>
