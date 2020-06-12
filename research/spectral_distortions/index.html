@@ -3,31 +3,70 @@ layout: default
 title: Spectral distortions
 ---
 
-<div class="blurb">
-	<h1>Spectral distortions</h1>
-</div><!-- /.blurb -->
+<html>
 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 <body>
-<ul>
 
-<li>
-<h2>Cosmological parameter constraints with future spectrometers measurements of CRR </h2>
-<img src="/research/spectral_distortions/img/cosmo_CRR/spect_only_standard_yhe_nnu_V2050X10_All_Frgs.jpeg" width="75%"></img>
-<img src="/research/spectral_distortions/img/cosmo_CRR/spect_planck_standard_yhe_nnu_frg_drg.gif" width="75%"></img>
-</li>
+	<div class="blurb">
+		<h1>Spectral distortions</h1>
+	</div><!-- /.blurb -->
 
-<li>
-<h2>Voyage 2050 forecasts</h2>
-<img src="/research/spectral_distortions/img/V2050/new_errors_PRISTINE_4_PIXIE_4_SPIXIE_8_441.jpeg" width="75%"></img>
-</li>
 
-<li>
-<h2>ILC methods to measure monopole distortion signals </h2>
-<img src="/research/spectral_distortions/img/MILC/detected_mean.jpeg" width="75%"></img>
-<img src="/research/spectral_distortions/img/MILC/abs_bias_in_detected_mean.jpeg" width="75%"></img>
-<img src="/research/spectral_distortions/img/MILC/measurement_error.jpeg" width="75%"></img>
-</li>
+	<button type="button" class="collapsible">
+	Cosmological parameter constraints with future spectrometers measurements of CRR
+	</button>
+	<div class="content">
+		<p>Results from ...</p>
+	  	<img src="/research/spectral_distortions/img/cosmo_CRR/spect_only_standard_yhe_nnu_V2050X10_All_Frgs.jpeg" width="75%">
+		</img>
+		<img src="/research/spectral_distortions/img/cosmo_CRR/spect_planck_standard_yhe_nnu_frg_drg.gif" width="75%">
+		</img>
+	</div>
 
-</ul>
+
+	<button type="button" class="collapsible">
+	Voyage 2050 forecasts
+	</button>
+	<div class="content">
+		<p>Results from ...</p>
+	  	<img src="/research/spectral_distortions/img/V2050/new_errors_PRISTINE_4_PIXIE_4_SPIXIE_8_441.jpeg" width="75%">
+	  	</img>
+	</div>
+
+	<button type="button" class="collapsible">
+	ILC methods to measure monopole distortion signals
+	</button>
+	<div class="content">
+		<p>Results from ...</p>
+	  	<img src="/research/spectral_distortions/img/MILC/detected_mean.jpeg" width="75%">
+	  	</img>
+		<img src="/research/spectral_distortions/img/MILC/abs_bias_in_detected_mean.jpeg" width="75%">
+		</img>
+		<img src="/research/spectral_distortions/img/MILC/measurement_error.jpeg" width="75%">
+		</img>
+	</div>
+	
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+  		coll[i].addEventListener("click", function() {
+    	this.classList.toggle("active");
+    	var content = this.nextElementSibling;
+    	if (content.style.display === "block") {
+      		content.style.display = "none";
+    	} else {
+      		content.style.display = "block";
+    	}
+  		});
+		}
+	</script>
+
 </body>
+</html>
+
