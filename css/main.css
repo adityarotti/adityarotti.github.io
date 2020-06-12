@@ -6,9 +6,9 @@
   min-height: 80px;
 
   /* Center and scale the image nicely */
-  background-position: 110% 130%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 600px;
 
   /* Needed to position the navbar */
   /*position: relative;*/
