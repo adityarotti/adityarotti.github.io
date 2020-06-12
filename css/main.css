@@ -1,6 +1,6 @@
 .bg-img {
   /* The image used */
-  background-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/WMAP_2010.png/2880px-WMAP_2010.png";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/WMAP_2010.png/2880px-WMAP_2010.png");
 
   min-height: 380px;
 
