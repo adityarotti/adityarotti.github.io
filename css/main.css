@@ -6,9 +6,9 @@
   min-height: 80px;
 
   /* Center and scale the image nicely */
-  background-position: 120% 50%;
+  background-position: 180% 50%;
   background-repeat: no-repeat;
-  background-size: 600px;
+  background-size: 800px;
 
   /* Needed to position the navbar */
   /*position: relative;*/
@@ -41,7 +41,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.4em;
     color: #333;
 }
